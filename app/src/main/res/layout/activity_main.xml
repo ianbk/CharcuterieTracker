@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/hamCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toStartOf="@id/hamPlus"
+        app:layout_constraintTop_toTopOf="@id/hamPlus" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/hamPlus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="2dp"
+        app:layout_constraintEnd_toStartOf="@id/textViewHam"
+        app:layout_constraintTop_toTopOf="@id/textViewHam"
+        android:src="@mipmap/plus_icon_round"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/hamMinus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="2dp"
+        android:src="@mipmap/minus_icon_round"
+        app:layout_constraintStart_toEndOf="@id/textViewHam"
+        app:layout_constraintTop_toTopOf="@id/textViewHam" />
+
+    <TextView
+        android:id="@+id/textViewHam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="25dp"
+        android:padding="5dp"
+        android:text="Ham, 55 cal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/salamiCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toStartOf="@id/salamiPlus"
+        app:layout_constraintTop_toTopOf="@id/salamiPlus" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/salamiPlus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="2dp"
+        app:layout_constraintEnd_toStartOf="@id/textViewSalami"
+        app:layout_constraintTop_toTopOf="@id/textViewSalami"
+        android:src="@mipmap/plus_icon_round"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/salamiMinus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="2dp"
+        android:src="@mipmap/minus_icon_round"
+        app:layout_constraintStart_toEndOf="@id/textViewSalami"
+        app:layout_constraintTop_toTopOf="@id/textViewSalami" />
+
+    <TextView
+        android:id="@+id/textViewSalami"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salami, 90 cal"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="@id/textViewHam"
+        app:layout_constraintTop_toBottomOf="@id/textViewHam" />
+
+    <TextView
+        android:id="@+id/roastBeefCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toStartOf="@id/roastBeefPlus"
+        app:layout_constraintTop_toTopOf="@id/roastBeefPlus" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/roastBeefPlus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="2dp"
+        app:layout_constraintEnd_toStartOf="@id/textViewRoastBeef"
+        app:layout_constraintTop_toTopOf="@id/textViewRoastBeef"
+        android:src="@mipmap/plus_icon_round"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/roastBeefMinus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="2dp"
+        android:src="@mipmap/minus_icon_round"
+        app:layout_constraintStart_toEndOf="@id/textViewRoastBeef"
+        app:layout_constraintTop_toTopOf="@id/textViewRoastBeef" />
+
+    <TextView
+        android:id="@+id/textViewRoastBeef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roast Beef, 70 cal"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="@id/textViewSalami"
+        app:layout_constraintTop_toBottomOf="@id/textViewSalami" />
+
+    <TextView
+        android:id="@+id/cornedBeefCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toStartOf="@id/cornedBeefPlus"
+        app:layout_constraintTop_toTopOf="@id/cornedBeefPlus" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/cornedBeefPlus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="2dp"
+        app:layout_constraintEnd_toStartOf="@id/textViewCornedBeef"
+        app:layout_constraintTop_toTopOf="@id/textViewCornedBeef"
+        android:src="@mipmap/plus_icon_round"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/cornedBeefMinus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="2dp"
+        android:src="@mipmap/minus_icon_round"
+        app:layout_constraintStart_toEndOf="@id/textViewCornedBeef"
+        app:layout_constraintTop_toTopOf="@id/textViewCornedBeef" />
+
+    <TextView
+        android:id="@+id/textViewCornedBeef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Corned Beef, 70 cal"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="@id/textViewRoastBeef"
+        app:layout_constraintTop_toBottomOf="@id/textViewRoastBeef" />
+
+    <TextView
+        android:id="@+id/MozzarellaCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toStartOf="@id/mozzarellaPlus"
+        app:layout_constraintTop_toTopOf="@id/mozzarellaPlus" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/mozzarellaPlus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="2dp"
+        app:layout_constraintEnd_toStartOf="@id/textViewMozzarella"
+        app:layout_constraintTop_toTopOf="@id/textViewMozzarella"
+        android:src="@mipmap/plus_icon_round"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/mozzarellaMinus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="2dp"
+        android:src="@mipmap/minus_icon_round"
+        app:layout_constraintStart_toEndOf="@id/textViewMozzarella"
+        app:layout_constraintTop_toTopOf="@id/textViewMozzarella" />
+
+    <TextView
+        android:id="@+id/textViewMozzarella"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mozzarella Cheese, 35 cal"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="@id/textViewCornedBeef"
+        app:layout_constraintTop_toBottomOf="@id/textViewCornedBeef" />
+
+    <TextView
+        android:id="@+id/whiteCheddarCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toStartOf="@id/whiteCheddarPlus"
+        app:layout_constraintTop_toTopOf="@id/whiteCheddarPlus" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/whiteCheddarPlus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="2dp"
+        app:layout_constraintEnd_toStartOf="@id/textViewWhiteCheddar"
+        app:layout_constraintTop_toTopOf="@id/textViewWhiteCheddar"
+        android:src="@mipmap/plus_icon_round"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/whiteCheddarMinus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="2dp"
+        android:src="@mipmap/minus_icon_round"
+        app:layout_constraintStart_toEndOf="@id/textViewWhiteCheddar"
+        app:layout_constraintTop_toTopOf="@id/textViewWhiteCheddar" />
+
+    <TextView
+        android:id="@+id/textViewWhiteCheddar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="White Cheddar Cheese, 55 cal"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="@id/textViewMozzarella"
+        app:layout_constraintTop_toBottomOf="@id/textViewMozzarella" />
+
+    <TextView
+        android:id="@+id/textViewCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Calories: "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCalorieCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@id/textViewCalories"
+        app:layout_constraintTop_toTopOf="@id/textViewCalories" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
